@@ -3,7 +3,7 @@ let c = canvas.getContext('2d');
 
 canvas.width = innerWidth;
 canvas.height = innerHeight;
-let cellWidth = 21;
+let cellWidth = 55;
 let cellHeight = 34;
 let rows = canvas.height / cellWidth;
 let cols = canvas.width / cellHeight;
@@ -63,7 +63,7 @@ function animate() {
 
 	requestAnimationFrame(animate);
 
-	if (ticker % 1 === 0) {
+	if (ticker % 2 === 0) {
 			a = canvas.width - x;
 			b = (canvas.height) - cellHeight - y;
 			// let randomSkew = document.getElementById('random-skew');
